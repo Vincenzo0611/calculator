@@ -1,0 +1,17 @@
+<div>
+    <div class="title-container">
+        <div class="title">History</div>
+        <span class="clear" (click)="clearHistory()">Clear</span>
+        <span class="calculator" routerLink="">Calculator</span>
+    </div>
+    <div class="history">
+        @if (history.length === 0) {
+            <div class="history__item">No history</div>
+        }
+        @else {
+            <div *ngFor="let op of history" class="history__item">
+                {{ op }}
+            </div>
+        }
+    </div>
+</div>

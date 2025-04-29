@@ -1,0 +1,42 @@
+
+<div class="title-container">
+    <div class="title">Calculator</div>
+    <span class="history" routerLink="History">History</span>
+</div>
+<div class="display">
+    <div class="display__old-expression">{{ oldOperation }}</div>
+    <div class="display__expression">{{ operation }}</div>
+</div>
+<div class="grid">
+    <div class="keypad" >
+        <div class="keypad__row">
+            <button (click)="clear()" class="keypad__button keypad__button--clear">C</button>
+            <button (click)="appendToExpression('(')" class="keypad__button">(</button>
+            <button (click)="appendToExpression(')')" class="keypad__button">)</button>
+            <button (click)="appendToExpression('+')" class="keypad__button keypad__button--operator">+</button>
+        </div>
+        <div class="keypad__row">
+            <button (click)="appendToExpression('7')" class="keypad__button">7</button>
+            <button (click)="appendToExpression('8')" class="keypad__button">8</button>
+            <button (click)="appendToExpression('9')" class="keypad__button">9</button>
+            <button (click)="appendToExpression('-')" class="keypad__button keypad__button--operator">-</button>
+        </div>
+        <div class="keypad__row">
+            <button (click)="appendToExpression('4')" class="keypad__button">4</button>
+            <button (click)="appendToExpression('5')" class="keypad__button">5</button>
+            <button (click)="appendToExpression('6')" class="keypad__button">6</button>
+            <button (click)="appendToExpression('*')" class="keypad__button keypad__button--operator">*</button>
+        </div>
+        <div class="keypad__row">
+            <button (click)="appendToExpression('1')" class="keypad__button">1</button>
+            <button (click)="appendToExpression('2')" class="keypad__button">2</button>
+            <button (click)="appendToExpression('3')" class="keypad__button">3</button>
+            <button (click)="appendToExpression('/')" class="keypad__button keypad__button--operator">/</button>
+        </div>
+        <div class="keypad__row">
+            <button (click)="appendToExpression('0')" class="keypad__button keypad__button--zero">0</button>
+            <button (click)="appendToExpression('.')" class="keypad__button">.</button>
+            <button (click)="resultExpression()" class="keypad__button keypad__button--operator">=</button>
+        </div>
+    </div>
+</div>

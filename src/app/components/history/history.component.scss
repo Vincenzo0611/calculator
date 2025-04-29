@@ -1,0 +1,71 @@
+.title-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #001f0e;
+    color: white;
+    font-size: 2em;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 160px;
+    padding-right: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.calculator
+  {
+    cursor: pointer;
+    padding: 20px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #04a346;
+    &:hover
+    {
+        background-color: #04662e;
+        transform: scale(1.05);
+    }
+  }
+  .history
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .history__item
+  {
+    display: block;
+    background-color: #242424;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    width: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    &:hover
+    {
+        background-color: #333;
+        transform: scale(1.05);
+    } 
+  }
+
+  .clear
+  {
+    cursor: pointer;
+    padding: 20px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #a30434;
+    &:hover
+    {
+        background-color: #27010c;
+        transform: scale(1.05);
+    }
+  }
